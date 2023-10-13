@@ -36,11 +36,17 @@
 >
 > ## <p align="center" >❤️❤️Hallo 😁😁😁😁😂❤️❤️<p>
 >
-> > ### **My** name is _Dewa Surya Ariesta_, **I** love to learn, make new friend and face new challenge. Already have experience 8 months tech industry where i work as Frontend engineer and ui/ux. every things happen to me is miracle, my friend's invite me on they project and tech me about tech, then Here i join **revou** to gain my knowledge.<br>
+> > ### **My** name is _Dewa Surya Ariesta_, **I** love to learn, make new friend and face new challenge. Already have experience 8 months tech industry where i work as Frontend engineer and ui/ux. every things happen to me is miracle, my friend's invite me on they project and tech me about tech, then Here i join **revou** to gain my knowledge
 > >
-> > ### **The**</span> skill already a have a earn by may self is almost everything about frontend. start from design layout on Figma , wrote the code on Angular and use FiraBase as backend service.
+> > ### **The** skill already i earn by may self is almost everything about frontend. start from design layout on Figma , wrote the code on Angular and use FiraBase as backend service.
 > >
-> > ### **Frontend** is the major skill on techno world, the skill come to me just like a blessing and make me fill excited and curious <br><br> _Dewa surya Ariesta-REVOU-Student_<br> Wrote this README with <span style="color:red">LOVE</span><p  align='center'> =❤️❤️❤️=</p>
+> > ### **Frontend development** is my major skill on techno world, the skill come to me just like a blessing and make me fill excited and curious and bring me here, following _revou_ course
+> >
+> > _Dewa surya Ariesta-REVOU-Student_
+> >
+> > Wrote this README with LOVE
+> >
+> > # <p  align='center'> =❤️❤️❤️=</p>
 
 ## Contact ME :
 
