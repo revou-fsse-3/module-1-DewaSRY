@@ -36,7 +36,7 @@
 >
 > ## <p align="center" >❤️❤️Hallo 😁😁😁😁😂❤️❤️<p>
 >
-> > ### **My** name is _Dewa Surya Ariesta_, **I** love to learn, make new friend and face new challenge. Already have experience 8 months tech industry where i work as Frontend engineer and ui/ux. every things happen to me is miracle, my friend's invite me on they project and tech me about tech, then Here i join **revou** to gain my knowledge
+> > ### **My** name is _Dewa Surya Ariesta_, **I** love to learn, make new friend and face new challenge. Already have experience 8 months tech industry where i work as Frontend engineer and ui/ux. every things happen to me is miracle, my friend's invite me on they project and tach me about tech, then Here i join **revou** to gain my knowledge
 > >
 > > ### **The** skill already i earn by may self is almost everything about frontend. start from design layout on Figma , wrote the code on Angular and use FiraBase as backend service.
 > >
