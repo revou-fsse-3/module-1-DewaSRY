@@ -58,5 +58,5 @@
 
 
 > ## ->  toriq clone
->> 
->> <p><img src="./assets/toriqClone.jpg" alt="toriq" /></p>
+
+<p><img src="./assets/toriqClone.jpg" alt="toriq" /></p>
