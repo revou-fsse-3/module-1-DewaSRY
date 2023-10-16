@@ -14,7 +14,7 @@
 
 <h2 > " Brief About Me: Dewa 😎 </h2>
 <p align="center">
-  <img width="300" hight="300"  src="./assets/img/Dewa-img-1.png" alt="hh"> </p>
+  <img width="300" hight="300"  src="./assets/dewa.jpg" alt="hh"> </p>
 
 | Name          | Dewa Surya Ariesta           |
 | ------------- | ---------------------------- |
@@ -58,4 +58,5 @@
 
 
 > ## ->  toriq clone
->> <img width="100" height="100" src="./assets/toriqClone.jpg" alt="test"/>
+>> 
+>> <p><img src="./assets/toriqClone.jpg" alt="toriq" /></p>
