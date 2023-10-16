@@ -57,6 +57,6 @@
 # <p align='center'>Revou Task</p>
 
 
-> ## ->  toriq clone
-
-<p><img src="./assets/toriqClone.jpg" alt="toriq" /></p>
+> # ->  toriq clone
+>[![toriq-clone](./assets/toriqClone.jpg)](https://revou-fsse-3.github.io/module-1-DewaSRY/THORIQ-EXAMPLE-WEEK-1/index.html )
+>
