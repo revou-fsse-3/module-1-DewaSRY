@@ -58,4 +58,4 @@
 
 
 > ## ->  toriq clone
->> <img width="100" height="100" src="./assets/toriqClone.jpg">
+>> <img width="100" height="100" src="/assets/toriqClone.jpg">
