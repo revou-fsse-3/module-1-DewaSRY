@@ -1,0 +1,147 @@
+
+*{
+   
+    margin: 0;
+    padding: 0;
+}
+/* Navigation */
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    background-color: whitesmoke;
+    width: 100%;
+   
+}
+
+nav > span.relative-container{
+    flex-grow:2 ;
+    margin-left:0.5rem;
+
+    color: #000;
+    padding: auto;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+nav > span.relative-container > img{
+    width:  2rem;
+    height: 2rem;
+}
+nav > span.relative-container > span{
+   background-color: red;
+   border-radius: 50%;
+   font-size: 0.8rem;
+   transform: translateY(-20%);
+   color: white;
+}
+nav > ul{
+    list-style: none;
+
+   display: flex;
+   width: max-content;
+   font-size: 1rem;
+   justify-content: flex-end;
+}
+nav > ul > li {
+   margin-right: 0.5rem;
+}
+/* Hero section */
+header{
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    background-color: #222222 ;
+}
+
+section#penguin-photos{
+    width: 100%;
+    text-align: center;
+}
+section#penguin-photos img{
+    width: 95%;
+    margin: auto;
+}
+
+
+section#penguin-facts{
+    width: 100%;
+    
+}
+section#penguin-facts > h2{
+    text-align: center;
+}
+section#penguin-facts> .flex-container{
+    width: 90%;
+    margin: auto;
+   display: flex;
+   flex-direction: column;
+}
+section#penguin-facts> .flex-container > figure {
+  width: 100%;
+}
+section#penguin-facts> .flex-container > figure> img{
+  width: 100%;
+}
+
+section#section-video{
+    width: 98%;
+    margin: auto;
+    margin-top: 1rem;
+   
+
+}
+
+section#form-section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+
+    background-color: #333333;
+    color: white;
+    
+}
+
+section#form-section > form{
+ /* width: 70%; */
+ min-width:30rem ;
+ margin: auto;
+
+}
+section#form-section > form > fieldset{
+    padding:  5% 3%;  
+}
+section#form-section > form > fieldset > div> input{
+    margin-top: 1rem;
+   }
+section#form-section > form > fieldset > div> input[type="text"]{
+  width: 100%;
+}
+
+section#form-section > form > fieldset > div> input[type="email"]{
+  width: 100%;
+}
+section#form-section > form > fieldset > div> textarea{
+  width: 100%;
+  margin: 1rem 0;
+}
+section#form-section > form > button{
+    width: 100%;
+    background-color: #333333;
+    color: white;
+    border: solid 3px white ;
+    border-radius: 6px;
+    padding: 0.5rem 0;
+}
