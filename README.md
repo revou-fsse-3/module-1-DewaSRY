@@ -27,7 +27,7 @@
 > - form of card serve as a modal component which mean can occur just by one click
 > - the last part, there is some  video why you should make Some TODO
 >
-> simple we TODO APP, i make specially to amaze my Team as Friend also to warn they, there is some place they can make make every by the own mind and creativity 
+> simple web TODO APP, i make specially to amaze my Team as Friend also to warn they, there is some place they can make make every by the own mind and creativity 
 > ## Dewa Surya ariest   
 
 
