@@ -5,31 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TODO Adventure</title>
     <link rel="stylesheet" href="./style/index.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
     <script src="https://kit.fontawesome.com/9e7f17e50e.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body as>
     <!-- Navigation menu -->
     <nav id="navigation-menu">
         
-        <span class="nav-menu">
+        <a href="#hero-banner" class="nav-menu">
             <img src="./assets/hamberger.svg" alt="">
             <h4>TODO</h4>
-        </span>
+        </a>
 
-        <span class="nav-menu">
-            <h4>Home</h4>
+        <a href="#todo-introduce" class="nav-menu">
+            <h4>Usage</h4>
             <img src="./assets/house.svg" alt="">
-        </span>
+        </a>
         
-        <span class="nav-menu">
+        <a href="#todo-cards" class="nav-menu">
             <h4>Card</h4>
             <img src="./assets/card.svg" alt="">
-        </span>
+        </a>
 
-        <span class="nav-menu">
+        <a href="#footer" class="nav-menu">
             <h4>Profile</h4>
             <img src="./assets/user.svg" alt="">
-        </span>
+        </a>
     </nav>
 
     <main>
@@ -47,38 +48,45 @@
             </div>
         </header>
 
-        <!-- Todo Introduce -->
-        <section id="todo-about">
+        <!-- Todo introduce -->
+        <section id="todo-introduce">
+            <!-- Intro of the TODO Card -->
             <div class="todo-text">
-                <h2>Simple Usage</h2>
-
+              
                 <figure class="todo-intro">
+                    <h2>TODO CARD : Makes your dream comme true</h2>
                     <p>
-                      Bid me discourse, I will enchant thine ear, Or like a fairy trip upon the
-                      green, Or, like a nymph, with long dishevelled hair, Dance on the sands, and
-                      yet no footing seen: Love is a spirit all compact of fire, Not gross to
-                      sink, but light, and will aspire.
+                  On this application will leet you make some todo card, where your dream travel around indonesia might be come true.
                     </p>
+                    <figcaption>
+                        <cite>Every dream is worth to fight </cite>
+                        ,every destination is history,
+                        <br>
+                        <b>
+                            ...Just a non sens words.
+                        </b>
+                    </figcaption>
 
-                    <figcaption><cite>Venus and Adonis</cite>, by William Shakespeare</figcaption>
                 </figure>
 
                 <ul class="todo-intro-list">
+                    <h2>Simple Usage</h2>
                     <li>
-                        Lorem ipsum dolor sit amet consectetur adipisicing.
+                        Tab the big TODO Button below 
                     </li>
                     <li>
-                        Lorem ipsum dolor sit amet consectetur adipisicing.
+                       Fill your form card, and click submit
                     </li>
                     <li>
-                        Lorem ipsum dolor sit amet consectetur adipisicing.
+                        You can close the Form, just tab on the outside of the form 
                     </li>
                     <li>
-                        Lorem ipsum dolor sit amet consectetur adipisicing.
+                        if you submit the form the card will appear on the container  
                     </li>
                 </ul>
 
             </div>
+
             <div class="todo-img">
                 <img src="./assets/Todo-Figure.png" alt="todo-figure">
             </div>
@@ -137,7 +145,7 @@
                     <legend>TODO Card</legend>
                     <!-- Title -->
                     <label for="title-input">title</label>
-                    <input id="title-input" minlength="5" required type="text">
+                    <input id="title-input" minlength="5" required type="text" placeholder="Insert your title (Tt lest 5 character)">
                     <!-- Date -->
                     <label for="data-input">Date</label>
                     <input id="data-input" required type="date">
@@ -145,7 +153,7 @@
 
                 <fieldset class="description-fieldset">
                     <legend>Description</legend>
-                    <Textarea minlength="20" required id="description-input"></Textarea>
+                    <Textarea placeholder="Describe your desire to come to this beautiful place  (At lest 10 character)" minlength="10" required id="description-input"></Textarea>
                 </fieldset>
                 <button  id="button-input" class="todo-button">Create Your card</button>
 
@@ -166,6 +174,10 @@
       
 
             <!-- Card containers -->
+            <h2>
+                TODO Containers
+            </h2>
+
             <div class="card-containers" id="cards-container">
 
                 <!-- First Card component -->
@@ -185,10 +197,20 @@
 
         
     </main>
-    <footer>
-        <h2>WHY YOU NEED MAKE TODO LIST:</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/SappngY0ZQ8?si=ewgqqzNtFOkXkZpO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <footer id="footer">
+        <div>
+            <h2>WHY YOU NEED MAKE TODO LIST:</h2>
+            <iframe width="350" height="300" src="https://www.youtube.com/embed/SappngY0ZQ8?si=ewgqqzNtFOkXkZpO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div>
+            <h2>Dewa Surya Ariesta - Revou Student  </h2>
+            <br>
+            <p>Make this app with Love</p>
+        </div>
+
     </footer>
+
+
     <script src="./src/index.js"></script>
 </body>
 </html>

@@ -1,6 +1,16 @@
 # REVOU-course
 
-## Day one : make read me about your self
+## week one (make static web page)
+> just type the image 
+<p align="center">
+  <a href="https://main--sprightly-banoffee-3b7821.netlify.app/" >
+   <img src="./assets/week-1/TODO-HERO.jpg" width="150">
+   <img src="./assets/week-1/TODO-FORM.jpg" width="150">
+   <img src="./assets/week-1/TODO-CARD.jpg" width="150">
+  </a>
+</p>
+
+
 
 ### About Me : REVOU SOFTWARE ENGINEERING - SOUL - STUDENT
 
@@ -54,9 +64,7 @@
 
 ## =============================================
 
-# <p align='center'>Revou Task</p>
 
 
-> # ->  toriq clone
->[![toriq-clone](./assets/toriqClone.jpg)](https://revou-fsse-3.github.io/module-1-DewaSRY/THORIQ-EXAMPLE-WEEK-1/index.html )
->
+
+

@@ -2,6 +2,7 @@ const formModal = document.getElementById("todo-modal")
 const formCard= document.getElementById("todo-form")
 const openModal = document.getElementById("open-modal")
 
+const modal= document.querySelector('dialog')
 //component 
 const cardContainer = document.getElementById("cards-container")
 
@@ -48,7 +49,6 @@ function makeTheCard() {
     
     const findSelected=()=> {
         destSelected = document.querySelector("input[name='destination']:checked").value
-        console.log(destSelected)
     }
     destinationFields.forEach((desF) => {
         desF.addEventListener("change",findSelected)
@@ -71,26 +71,51 @@ function makeTheCard() {
 
 
 
-// click the todo form
-openModal.addEventListener("click", () => {
-    formModal.showModal()
-    document.body.classList.add("overflow-hidden")
-})
+    let isModalOpen= false
 
-//  up method when outside the form get click
-document.addEventListener("click", (e) => {
-    if (!formCard.contains(e.target)) {
+    // click the todo form
+    openModal.addEventListener("click", () => {
+        formModal.showModal()
+    
+        document.body.classList.add("overflow-hidden")
+       
+        isModalOpen=true
+    })
+    
+function setCloseModel() {
+    modal.addEventListener("animationend", () => {
+        modal.removeAttribute('closing')
+
         formModal.close()
+        isModalOpen=false
+    }, { once: true })
+    
+    console.log('test')
     }
-}, true)
-// close the modal
-formModal.addEventListener("close", () => {
-    document.body.classList.remove("overflow-hidden")
-})
+    
+    //  up method when outside the form get click
+    document.addEventListener("click", (e) => {
+        if (!formCard.contains(e.target)&&isModalOpen) {
+            modal.setAttribute('closing', '')
 
-// submit 
-formCard.addEventListener("submit", (e) => {
-    e.preventDefault();
-    makeTheCard()
-    formModal.close()
-})
+            setCloseModel()
+     
+            
+        }
+    }, true)
+    // close the modal
+    formModal.addEventListener("close", () => {
+        document.body.classList.remove("overflow-hidden")
+    })
+    
+    // submit 
+    formCard.addEventListener("submit", (e) => {
+        e.preventDefault();
+        setCloseModel()
+        makeTheCard()
+
+     
+        formModal.close()
+        
+    })
+    

@@ -5,6 +5,9 @@
 .overflow-hidden{
     overflow: hidden;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 /* Navigation  */
 nav#navigation-menu{
@@ -18,7 +21,7 @@ nav#navigation-menu{
     z-index: 10;
 }
 
-span.nav-menu{
+.nav-menu{
     position: relative;
     display: flex;
     margin: 1rem;
@@ -28,27 +31,27 @@ span.nav-menu{
     color: rgb(29, 28, 28);
     cursor: pointer;
 }
-span.nav-menu:first-of-type> img{
+.nav-menu:first-of-type> img{
     background-color:aliceblue ;
     padding: 0.5rem 1rem;
     border-radius: 12px;
 }
-span.nav-menu:first-of-type{
+.nav-menu:first-of-type{
    flex-grow: 1;
 }
-span.nav-menu:first-of-type>h4{
+.nav-menu:first-of-type>h4{
     background-color:aliceblue ;
     padding: 0.5rem 1rem;
     border-radius: 12px;
    
 }
 
-span.nav-menu> img{
+.nav-menu> img{
     margin:0 0.5rem;
     width: 1rem;
     height: 1rem;
 }
-span.nav-menu::after{
+.nav-menu::after{
     content: "";
     position: absolute;
     left: 0;
@@ -60,7 +63,7 @@ span.nav-menu::after{
     transition:1s ease-in-out ;
     z-index: -1;
 }
-span.nav-menu:hover:after{
+.nav-menu:hover:after{
     transform: translateX(100%);
 }
 /* Hero banner */
@@ -112,28 +115,23 @@ header#hero-banner >div> h4> span {
     color: rgb(240, 57, 57);
 }
 
-/* todo-text */
-section#todo-about{
+/* todo-text ------------------------------------------------ */
+section#todo-introduce{
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     margin-top: 1rem;
     grid-gap: 1rem;
 
 }
-section#todo-about> .todo-text{
+section#todo-introduce> .todo-text{
     grid-column-start: 1;
     grid-column-end: 2;
     margin: 2rem 0;
     align-self: end;
     padding: 1rem 4rem;
-
-    
-}
-section#todo-about> .todo-text> h2{
-    margin-bottom: 7rem;
 }
 
-section#todo-about> .todo-img{
+section#todo-introduce> .todo-img{
     grid-column-start: 2;
     grid-column-end: 3;
     
@@ -141,23 +139,53 @@ section#todo-about> .todo-img{
     overflow: hidden;
     min-width: 10rem;
 }
-section#todo-about> .todo-img> img{
-    margin: auto;
-}
 
 .todo-intro{
     line-height: 1.2rem;
     margin-bottom: 5rem;
+    & > h2{
+        padding-bottom: 0.5rem;
+        margin-bottom: 2rem;
+        border-bottom: solid 2px #7b7878;
+    }
 }
-.todo-intro-list> li{
-    margin-bottom: 0.5rem;
 
+.todo-intro-list{
+
+    & > h2{
+        padding-bottom: 0.5rem;
+        margin-bottom: 2rem;
+        border-bottom: solid 2px #7b7878;
+    }
+    &> li{
+        margin-bottom: 0.5rem;
+    }
 }
+
+
+section#todo-introduce> .todo-img> img{
+    margin: auto;
+    border-radius: 12px;
+    box-shadow: 3px 3px rgba(0, 0, 0,0.5);
+}
+
 /* todo-cards */
 section#todo-cards{
 margin: 1rem auto;
 width: 95vw;
+& > h2{
+transform: translateY(60%);
+font-size: 2.6rem ;
+color: #282727;
+margin-left: 1.5rem;
+border: solid 1px white;
+border-radius: 13px;
+width: max-content;
+padding: 0.8rem 0.2rem;
+background-color: white;
 }
+}
+
 
 .card-form{
     width: 25rem;
@@ -280,9 +308,41 @@ border-radius: 12px;
     padding: 2rem 0.5rem;
     max-width: 1524px;
     border-radius: 12px;
+    transition: all 5s ease-in-out;
+   
 }
+
+dialog[open]{
+    animation: fade-in 0.8s forwards ;
+}
+dialog[closing]{
+    animation: fade-out 0.8s forwards ;
+}
+
 .todo-form::backdrop{
     background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.50) 100%) ;
+}
+
+@keyframes fade-in {
+    0% {
+        transform: translateY(-100%);
+      }
+    
+      100% {
+        transform: translateY(0);
+      } 
+}
+@keyframes fade-out {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    
+      100% {
+        transform: translateY(200%);
+        opacity: 0;
+     
+      } 
 }
 /* Destination Option  */
 .destination-radio{
@@ -349,4 +409,12 @@ border-radius: 12px;
 .todo-button:hover,
 .todo-button:active{
     transform: translateY(5%);
+}
+footer#footer{
+    background-color: #7b7878;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 3rem ;
+    color: white;
 }
