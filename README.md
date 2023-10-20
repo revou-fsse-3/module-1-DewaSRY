@@ -1,14 +1,34 @@
 # REVOU-course
 
+---
 ## week one (make static web page)
-> just type the image 
+
+### **TODO APP** (Make your dream come true)
+
 <p align="center">
+
   <a href="https://main--sprightly-banoffee-3b7821.netlify.app/" >
    <img src="./assets/week-1/TODO-HERO.jpg" width="150">
    <img src="./assets/week-1/TODO-FORM.jpg" width="150">
    <img src="./assets/week-1/TODO-CARD.jpg" width="150">
   </a>
 </p>
+
+### ! tab the button below or image above is other option to go the web site
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2485ea32-7bad-4558-90cb-b41581a174da/deploy-status)](https://app.netlify.com/sites/sprightly-banoffee-3b7821/deploys)
+> ## TODO APP (Make your dream come True)
+>
+>ont the web site above i was make simple TODO app how  have an modal form, when the form was submit the car with data from form will appear
+>
+> ## WEB FEATURE
+> - Simple navigation, link stacked horizontally on the top of website. user can travel around the web just by click the navigation option on display
+> - after the hero section ( the greet picture of Minang kabaou House ), serve some usage direction to use the app
+> - form of card serve as a modal component which mean can occur just by one click
+> - the last part, there is some  video why you should make Some TODO
+>
+> simple we TODO APP, i make specially to amaze my Team as Friend also to warn they, there is some place they can make make every by the own mind and creativity 
+> ## Dewa Surya ariest   
 
 
 
