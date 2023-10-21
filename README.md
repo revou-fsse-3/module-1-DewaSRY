@@ -16,7 +16,11 @@
 
 ### ! tab the button below or image above is other option to go the web site
 
+- Netlify : [Link to go to the website, host by netlify](https://main--sprightly-banoffee-3b7821.netlify.app/)
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/2485ea32-7bad-4558-90cb-b41581a174da/deploy-status)](https://app.netlify.com/sites/sprightly-banoffee-3b7821/deploys)
+
+
 > ## TODO APP (Make your dream come True)
 >
 >ont the web site above i was make simple TODO app how  have an modal form, when the form was submit the car with data from form will appear
