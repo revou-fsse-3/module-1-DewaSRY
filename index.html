@@ -4,62 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TODO Adventure</title>
-    <link rel="stylesheet" href="./style/index.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+
+    <!-- global css  -->
+    <link rel="stylesheet" href="/src/style/main.css">
+    <!-- for index file -->
+    <link rel="stylesheet" href="/src/style/index.css">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/public/icon/favicon-32x32.png">
     
-    <!-- <script src="https://kit.fontawesome.com/9e7f17e50e.js" crossorigin="anonymous"></script> -->
-    
+
     <!-- Font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body >
 
+ 
+
+
+          
     <!-- Header Section -->
-    <header id="headers">
-        <nav id="nav-menu">
-            
-            <a href="/index.html" class="nav-menu-item">
-                <i class="fa-solid fa-house"></i>
-                <h4>Home</h4>
-            </a>
-    
-            <a href="/destination-list.html" class="nav-menu-item">
-                <i class="fa-solid fa-list"></i>
-                <h4>Destination List</h4>
-            </a>
-            
-            <a href="/my-schedule.html" class="nav-menu-item">
-                <i class="fa-solid fa-user"></i>
-                <h4>My Schedule</h4>
-            </a>
-    
-            <a href="/about.html" class="nav-menu-item">
-                <i class="fa-solid fa-info"></i>
-                <h4>About</h4>
-            </a>
+    <header id="nav">
 
-            <!-- brand - logo -->
-            <div id="main-logo">
-                <h2 class="main-logo-icon">
-                    <span>TO</span>
-                    <span>DO</span>
-                </h2>
-                <p class="main-logo-effect">
-                    ToBe Come True
-                </p>
-            </div>
+    <!-- hamburger menu -->
+    <input type="checkbox" id="hamburger-checked" />
 
-        </nav>
+    <label for="hamburger-checked" id="hamburgers" >
+       <div class="hamburger-line" ></div>
+       <div class="hamburger-line" ></div>
+       <div class="hamburger-line" ></div>
+    </label>
 
+    <!-- navigation menu -->
+    <nav id="nav-menu">
+        <a href="/index.html" class="nav-menu-item">
+            <i class="fa-solid fa-house"></i>
+            <h4>Home</h4>
+        </a>
 
-        <div id="hamburger">
-           <div class="hamburger-line"/>
+        <a href="/destination-list.html" class="nav-menu-item">
+            <i class="fa-solid fa-list"></i>
+            <h4>Destination List</h4>
+        </a>
+        
+        <a href="/my-schedule.html" class="nav-menu-item">
+            <i class="fa-solid fa-user"></i>
+            <h4>My Schedule</h4>
+        </a>
+
+        <a href="/about.html" class="nav-menu-item">
+            <i class="fa-solid fa-info"></i>
+            <h4>About</h4>
+        </a>
+
+        <!-- brand - logo -->
+        <div id="main-logo">
+            <img src="/public/icon/mine-logo.jpg" alt="main-logo" srcset="">
+            <p class="main-logo-effect">
+                ToBe Come True
+            </p>
         </div>
+        
+    </nav>
     </header>
 
-    <!-- Navigation menu -->
-
-
+    <section id="hero">
+        <span id="todo-logo"></span>
+        <p>ToBe Come True</p>
+        <h2>Explore Every Destination </h2>
+        <h2>Wonderful of Indonesia </h2>
+    </section>
+  
 
 
     <script src="./src/index.js"></script>

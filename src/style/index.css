@@ -1,0 +1,18 @@
+section#hero{
+    width: 100%;
+    margin: auto;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url("/public/destinations/minang-1200x600.jpg") no-repeat 50% 0;
+    color: white;
+    height: 420px ;
+}
+
+
+
+
+@media screen and (min-width: 1400px ) {
+    section#hero{
+        max-width: 1400px;
+        height: 560px;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url("/public/destinations/minang-2000x800.jpg") no-repeat 50% 0;
+    }
+}
