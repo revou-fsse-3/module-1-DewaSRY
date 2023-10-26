@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="/src/style/main.css">
     <!-- for index file -->
     <link rel="stylesheet" href="/src/style/index.css">
+    <!-- for usage section -->
+    <link rel="stylesheet" href="/src/style/usage-section.css">
 
     <link rel="icon" type="image/png" sizes="32x32" href="/public/icon/favicon-32x32.png">
     
@@ -17,11 +19,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body >
-
- 
-
-
-          
     <!-- Header Section -->
     <header id="nav">
 
@@ -36,7 +33,7 @@
 
     <!-- navigation menu -->
     <nav id="nav-menu">
-        <a href="/index.html" class="nav-menu-item">
+        <a href="/index.html" class="nav-menu-item nav-active">
             <i class="fa-solid fa-house"></i>
             <h4>Home</h4>
         </a>
@@ -68,12 +65,45 @@
     </header>
 
     <section id="hero">
-        <span id="todo-logo"></span>
-        <p>ToBe Come True</p>
-        <h2>Explore Every Destination </h2>
-        <h2>Wonderful of Indonesia </h2>
+        <div id="todo" class="border-animate">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <a id="todo-logo">
+                TODO
+            </a>
+            <p>ToBe Come True</p>
+            <h2>Explore Every Destination </h2>
+            <h2>Wonderful of Indonesia </h2>
+        </div>
     </section>
-  
+    
+    <!-- usage-cards-tutorial -->
+    <section id="usage">
+
+        <!-- Tutorial usage -->
+        <div class="usage-card">
+            <img src="/public/usages/deside-the-destination.png" alt="" width="300" height="300">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium reprehenderit non alias consequatur ipsam magni quidem consequuntur praesentium iure nesciunt, numquam rem et incidunt. Sapiente delectus repudiandae id aliquid error?</p>
+        </div>
+
+        <div class="usage-card">
+            <img src="/public/usages/set-teh-destination.png" alt="" width="300" height="300">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium reprehenderit non alias consequatur ipsam magni quidem consequuntur praesentium iure nesciunt, numquam rem et incidunt. Sapiente delectus repudiandae id aliquid error?</p>
+        </div>
+
+        <div class="usage-card">
+            <img src="/public/usages/go-when-you-ready.png" alt="" width="300" height="300">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium reprehenderit non alias consequatur ipsam magni quidem consequuntur praesentium iure nesciunt, numquam rem et incidunt. Sapiente delectus repudiandae id aliquid error?</p>
+        </div>
+
+        <div class="usage-card">
+            <img src="/public/usages/go-to-destination.jpg" alt="" width="300" height="300">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium reprehenderit non alias consequatur ipsam magni quidem consequuntur praesentium iure nesciunt, numquam rem et incidunt. Sapiente delectus repudiandae id aliquid error?</p>
+        </div>
+
+    </section>
 
 
     <script src="./src/index.js"></script>
