@@ -1,0 +1,120 @@
+/* section#usage */
+.cards-container{
+    margin:2rem auto;
+    max-width: 1720px;
+    display: grid;
+    font-family: Arial, Helvetica, sans-serif;
+    /* for responsive towards children  width */
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr)) ;
+    row-gap:1.2rem;
+    > div{
+        place-self: center;
+
+        width: 320px;
+        position: relative;
+        margin: 1.5rem 1rem;
+        padding: 1rem;
+
+        width: 300px;
+        border: solid 1px gray;
+        border-radius: 12px;
+        >p{
+            display: inline-block;
+            margin: 2rem 1rem ;
+            inline-size:  250px;
+            line-height: 1.2rem;
+            word-wrap: break-word;
+        }
+        >h3{
+            margin: 2rem 1rem ;
+            font-size: 0.8rem;
+        }
+        >img{
+            border-radius: 12px;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0,0.5);
+        }
+        >button{
+            position: absolute;
+            bottom: 0.2rem;
+
+            padding: 0.5rem 2rem;
+            border-radius: 12px;
+            background-color: transparent;
+            cursor: pointer;
+            transition: all 0.5s ease-in-out;
+        
+        }
+        >button:hover{
+            background-color: gray;
+            border: gray ;
+            color: white;
+        }
+        >button:first-of-type{
+            right: 1rem;
+        }
+        >button:nth-of-type(2){
+            right: 8rem;
+        }
+    }
+}
+
+
+
+
+@media screen and (min-width:600px) {
+   .cards-container{
+        grid-template-columns:repeat(auto-fit,minmax(600px,1fr)) ;
+        >div{
+            width: 600px;
+            height: 300px;
+            display: grid;
+            grid-template-rows: repeat(2, minmax(300px,1f));
+            position: relative;
+            > :not(img){
+                grid-column: 2/3;
+                grid-row: 1/2;
+               
+            }
+            >h2{
+                font-size: 1.5rem;
+                margin: 0 0.5rem;
+            }
+            >p{
+               margin-top: 5rem;
+            }
+            >h3{
+                position: absolute;
+                bottom: 1rem;
+            }
+         
+        
+        }
+    }
+
+}
+
+
+
+@media screen and (min-width:1050px) {
+   .cards-container{
+        grid-template-columns:repeat(auto-fit,minmax(350px,1fr)) ;
+        >div{
+        width: 320px;
+        height: 600px;
+        position: relative;
+        margin: 1.5rem 1rem;
+        padding: 1rem;
+        place-self: center;
+
+        display: grid;
+        grid-template-columns: repeat(2, minmax(300px,1f));
+        position: relative;
+        >:not(img){
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+        }
+    }
+}

@@ -6,7 +6,7 @@ section#destination-list{
     display: grid;
     grid-template-columns:repeat(auto-fit,minmax(350px,1fr)) ;
 }
-
+ 
 .destination-card{
     width: 320px;
     position: relative;
