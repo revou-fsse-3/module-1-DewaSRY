@@ -3,9 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TODO Adventure</title>
+
+    <!-- global css  -->
+    <link rel="stylesheet" href="/src/style/main.css">
+    <!-- for index file -->
+    <link rel="stylesheet" href="/src/style/index.css">
+    <!-- for usage section -->
+    <link rel="stylesheet" href="/src/style/usage-section.css">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/public/icon/favicon-32x32.png">
+    
+
+    <!-- Font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
-    hallo
+<body >
+    <!-- Header Section -->
+    <header id="nav">
+
+    <!-- hamburger menu -->
+    <input type="checkbox" id="hamburger-checked" />
+
+    <label for="hamburger-checked" id="hamburgers" >
+       <div class="hamburger-line" ></div>
+       <div class="hamburger-line" ></div>
+       <div class="hamburger-line" ></div>
+    </label>
+
+    <!-- navigation menu -->
+    <nav id="nav-menu">
+        <a href="/index.html" class="nav-menu-item ">
+            <i class="fa-solid fa-house"></i>
+            <h4>Home</h4>
+        </a>
+
+        <a href="/destination-list.html" class="nav-menu-item">
+            <i class="fa-solid fa-list"></i>
+            <h4>Destination List</h4>
+        </a>
+        
+        <a href="/my-schedule.html" class="nav-menu-item nav-active">
+            <i class="fa-solid fa-user"></i>
+            <h4>My Schedule</h4>
+        </a>
+
+        <a href="/about.html" class="nav-menu-item">
+            <i class="fa-solid fa-info"></i>
+            <h4>About</h4>
+        </a>
+
+        <!-- brand - logo -->
+        <div id="main-logo">
+            <img src="/public/icon/mine-logo.jpg" alt="main-logo" srcset="">
+            <p class="main-logo-effect">
+                ToBe Come True
+            </p>
+        </div>
+        
+    </nav>
+    </header>
+
+  
+    
+    <!-- my-cards -->
+    <h1>my-sacudule</h1>
+    <section id="cards-containers">
+
+
+    </section>
+
+        <!--Modal to edit data form  -->
+        <dialog id="modal" >
+            <form   id="form-card">
+    
+                <!-- lagen one title and date-->
+                <fieldset id="first-field" >
+    
+                    <legend>Write Down your ToDo</legend>
+                    <label for="title-form">Title</label>
+                    <input required minlength="4" type="text" name="title" id="title-form">
+    
+                    <label for="date-form">Date</label>
+                    <input required type="date" name="date" id="date-form">
+    
+                    <label for="description-form">Description</label>
+                    <textarea required minlength="10" name="description-" id="description-form" cols="30" rows="10"></textarea>
+                </fieldset>
+    
+                  <!-- Image preview-->
+                  <fieldset id="secod-field" >
+                    <legend>
+                       Save Your ToDO
+                    </legend>
+                    <img src="" alt="" id="img-preview" width="250" height="250" >
+                    <button type="submit" method="dialog">Save Your Todo</button>
+                </fieldset>
+            </form>
+        </dialog>
+ 
+    <script src="/src/components/Cards-maker.js"></script>
+    <script src="/src/components/Cards-storage.js"></script>
+    <script src="/src/My-Scadule.js"></script>
+
+ 
 </body>
 </html>
