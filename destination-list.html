@@ -15,8 +15,12 @@
 
             <!-- Cards Container -->
             <link rel="stylesheet" href="/src/style/card-container.css">
-
+            <!-- alert service -->
+            <link rel="stylesheet" href="/src/style/alert.css">
             <link rel="stylesheet" href="/src/style/entrance.css">
+            <!-- footer animate -->
+            <link rel="stylesheet" href="/src/style/footer-animate.css">
+            <link rel="stylesheet" href="/src/style/footer-text.css">
             <title>TODO Adventure</title>
             <!-- Font-awesome -->
         </head>
@@ -25,6 +29,7 @@
             <section id="entrance">
                 <img src="/public/usages/set-teh-destination.png" alt="" srcset="">
             </section>
+
             <!-- Header Section -->
             <header id="nav">
                 <!-- hamburger menu -->
@@ -79,6 +84,10 @@
                     <h2>Wonderful of Indonesia </h2>
                 </div>
             </section>
+            <!-- alert -->
+            <div id="alert" class="">
+                <p></p>
+            </div>
             <section id="destination-list" class="cards-container">
                 <!-- destination cards container  -->
                 <div class="destination-card">
@@ -139,13 +148,11 @@
             </section>
 
             <!--Modal to insert data form  -->
-            <dialog id="modal" >
+            <dialog id="modal">
                 <form   id="form-card">
-
                     <!-- lagen one title and date-->
-                    <fieldset id="first-field" >
-
-                        <legend>Write Down your ToDo</legend>
+                    <div id="first-field" >
+                        <h2>Write Down your ToDo</h2>
                         <label for="title-form">Title</label>
                         <input required minlength="4" type="text" name="title" id="title-form">
 
@@ -154,19 +161,61 @@
 
                         <label for="description-form">Description</label>
                         <textarea required minlength="10" name="description-" id="description-form" cols="30" rows="10"></textarea>
-                    </fieldset>
+                    </div>
 
-                    <!-- Image preview-->
-                    <fieldset id="secod-field" >
-                        <legend>
-                        Save Your ToDO
-                        </legend>
-                        <img src="" alt="" id="img-preview" width="280" height="280" >
+                    <button  method="dialog" onclick="modal.close()">Cencel</button>
                         <button type="submit" method="dialog">Save Your Todo</button>
-                    </fieldset>
+
+                    <img src="/public/destinations/bali.jpg" alt="" id="img-preview" >
                 </form>
             </dialog>
+            <footer class=" ">
+                <div class="background-text">
+                    <div class="text-content">
+                        <span>Company</span>
+                        <span> Android App</span>
+                        <span>ios App</span>
+                        <span>Desktop</span>
+                        <span>Projects</span>
+                        <span>My tasks</span>
+                    </div>
+                    <div class="text-content">
+                        <span>Company</span>
+                        <span> Android App</span>
+                        <span>ios App</span>
+                        <span>Desktop</span>
+                        <span>Projects</span>
+                        <span>My tasks</span>
+                    </div>
+                    <div class="text-content">
+                        <span>Company</span>
+                        <span> Android App</span>
+                        <span>ios App</span>
+                        <span>Desktop</span>
+                        <span>Projects</span>
+                        <span>My tasks</span>
+                    </div>
+                    <div class="text-content">
+                        <span>Company</span>
+                        <span> Android App</span>
+                        <span>ios App</span>
+                        <span>Desktop</span>
+                        <span>Projects</span>
+                        <span>My tasks</span>
+                    </div>
+                </div>
 
+
+
+                <!-- animate bg -->
+                <div class="background-animate">
+                    <div class="city-bg">
+                        <span class="cycle-bg"></span>
+                        <span class="car-bg"></span>
+                    </div>
+                </div>
+            </footer>
+            <script src="/src/components/Alert.js"></script>
             <script src="/src/components/Image-Map.js"></script>
             <script src="/src/components/Modal-Elemet.js"></script>
             <script src="/src/components/Cards-storage.js"></script>

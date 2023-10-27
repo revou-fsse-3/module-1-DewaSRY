@@ -14,11 +14,10 @@
 .cards-container > div{
     /* layout set */
     display: grid;
-    width: clamp(280px,90%,450px);
+    width: clamp(280px,300px,450px);
     grid-template-rows: 300px minmax(300px, 1fr);
 
     place-self: center;
-    border: solid 1px gray;
     border-radius: 12px;
     box-shadow: 5px 5px rgba(0, 0, 0,0.1);
     position: relative;
@@ -85,7 +84,7 @@
         grid-template-columns:repeat(auto-fit,minmax(600px,1fr)) ;
     }
     .cards-container>div{
-        width: clamp(550px, 90%, 750px);
+        width: clamp(550px, 600px, 750px);
         height: 300px;
     }
     .cards-container>div>:not(img){
@@ -100,7 +99,7 @@
         grid-template-columns:repeat(auto-fit,minmax(300px,1fr)) ;
     }
     .cards-container >div{
-        width: clamp(280px,90%,450px);
+        width: clamp(280px,300px,450px);
         grid-template-rows: 300px minmax(300px, 1fr);
         height: 650px;
 
@@ -117,7 +116,7 @@
          grid-template-columns:repeat(auto-fit,minmax(600px,1fr)) ;
      }
      .cards-container>div{
-         width: clamp(550px, 90%, 750px);
+         width: clamp(550px, 600px, 750px);
          height: 300px;
      }
      .cards-container>div>:not(img){
@@ -130,7 +129,7 @@
          grid-template-columns:repeat(auto-fit,minmax(300px,1fr)) ;
      }
      .cards-container >div{
-         width: clamp(280px,90%,450px);
+         width: clamp(280px,300px,450px);
          grid-template-rows: 300px minmax(300px, 1fr);
          height: 650px;
  
@@ -147,7 +146,7 @@
          grid-template-columns:repeat(auto-fit,minmax(600px,1fr)) ;
      }
      .cards-container>div{
-         width: clamp(550px, 90%, 750px);
+         width: clamp(550px, 600px, 750px);
          height: 300px;
      }
      .cards-container>div>:not(img){

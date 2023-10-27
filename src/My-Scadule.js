@@ -37,7 +37,10 @@ class MySchedule{
             })
             ControlToDo.addControl(cardsEle, "Delete", "", () => {
                 SaveCards.deleteCard(id)
-                location.reload();
+                AlertService.run('Card get Delete, page will get Refresh', "/public/usages/go-when-you-ready.png")
+                setTimeout(() => {
+                    location.reload();
+                },2000)
             });
             ControlToDo.addControl(cardsEle, "Edit", "", () => {
                 // SaveCards.deleteCard(id);
@@ -75,8 +78,13 @@ FormModalEle.getTodoForm.addEventListener('submit', () => {
 
     SaveCards.updateCards(cardsID, imgSrc, title, para, date);
     ModalEl.closeModal();
-    location.reload();
+    AlertService.run('Card get edit, page will get Refresh', "/public/usages/go-when-you-ready.png")
+    setTimeout(() => {
+        location.reload();
+    },2000)
+
 })
+
 
 document.body.addEventListener("click", (e) => {
     if (!e.target.contains(FormModalEle.getTodoForm)) {

@@ -13,7 +13,7 @@ section#hero{
 
 div#todo{
     /* height: 150px; */
-    margin: 0 auto;
+    margin: 0.5rem auto;
     width: 90vw;
     padding: 1rem;
     border: solid 1.5px white;

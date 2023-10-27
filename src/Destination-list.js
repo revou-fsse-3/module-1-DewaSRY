@@ -20,6 +20,7 @@ FormModalEle.getTodoForm.addEventListener('submit', () => {
     const { para, title, date, imgSrc } = FormModalEle.submit()
     SaveCards.saveCards(imgSrc, title, para, date);
     ModalEl.closeModal();
+    AlertService.run('Create cards success, go to "my Schedule" to see', "/public/usages/set-teh-destination.png")
 })
 
 
