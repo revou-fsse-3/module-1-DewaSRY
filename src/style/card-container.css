@@ -1,38 +1,63 @@
-/* section#usage */
+
 .cards-container{
-    margin:2rem auto;
-    max-width: 1720px;
+    margin:0 auto;
+    max-width: 2400px;
     display: grid;
     font-family: Arial, Helvetica, sans-serif;
     /* for responsive towards children  width */
-    grid-template-columns:repeat(auto-fit,minmax(350px,1fr)) ;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr)) ;
     row-gap:1.2rem;
+    padding: 2rem 0;
+    
+    place-content: center;
 }
 .cards-container > div{
+    /* layout set */
+    display: grid;
+    width: clamp(280px,90%,450px);
+    grid-template-rows: 300px minmax(300px, 1fr);
+
     place-self: center;
-    position: relative;
-    margin: 1.5rem 1rem;
-    padding: 1rem;
-    width: 300px;
     border: solid 1px gray;
     border-radius: 12px;
-    box-shadow: 1rem 1rem rgba(0, 0, 0,0.1)  ;
+    box-shadow: 5px 5px rgba(0, 0, 0,0.1);
+    position: relative;
 }
 
+/* not image which h2, p, h3 */
+.cards-container > div>:not(img){
+    /* layout set */
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+.cards-container> div>h2,
 .cards-container> div>p{
-    display: inline-block;
-    margin: 2rem 1rem ;
     inline-size:  250px;
     line-height: 1.2rem;
     word-wrap: break-word;
+    margin: auto;
+}
+.cards-container>div>p{
+    font-style: italic;
+    font-weight: lighter;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.cards-container>div> h2{
+    position: absolute;
+    top: 0.5rem;
+    left: 1rem;
+    font-size: 1rem;
 }
 .cards-container> div>h3{
-    margin: 2rem 1rem ;
-    font-size: 0.8rem;
+    position: absolute;
+    top: 3rem;
+    left: 1rem;
+    font-size: 0.7rem;
 }
 .cards-container> div>img{
     border-radius: 12px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0,0.5);
+    margin: auto;
 }
 .cards-container> div>button{
     position: absolute;
@@ -58,54 +83,75 @@
 @media screen and (min-width:600px) {
    .cards-container{
         grid-template-columns:repeat(auto-fit,minmax(600px,1fr)) ;
-  
     }
     .cards-container>div{
-        width: 600px;
+        width: clamp(550px, 90%, 750px);
         height: 300px;
-        display: grid;
-        grid-template-rows: repeat(2, minmax(300px,1f));
-        position: relative;
     }
     .cards-container>div>:not(img){
         grid-column: 2/3;
         grid-row: 1/2;
-       
     }
-    .cards-container>div>h2{
-        font-size: 1.5rem;
-        margin: 0 0.5rem;
-    }
-    .cards-container>div>h3{
-        position: absolute;
-        bottom: 1rem;
-    }
-    .cards-container>div>p{
-        margin-top: 5rem;
-    }
-
 }
 
-@media screen and (min-width:1050px) {
+
+ @media screen and (min-width:900px) {
    .cards-container{
-        grid-template-columns:repeat(auto-fit,minmax(350px,1fr)) ;
+        grid-template-columns:repeat(auto-fit,minmax(300px,1fr)) ;
     }
     .cards-container >div{
-        width: 300px;
-        height: 600px;
-        position: relative;
-        margin: 1.5rem 1rem;
-        padding: 1rem;
-        place-self: center;
+        width: clamp(280px,90%,450px);
+        grid-template-rows: 300px minmax(300px, 1fr);
+        height: 650px;
 
-        display: grid;
-        grid-template-columns: repeat(2, minmax(300px,1f));
         position: relative;
     }
     .cards-container >div>:not(img){
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 2;
-        grid-row-end: 3;
+        grid-row: 2/3;
+        grid-column: 1/2;
     }
-}
+} 
+
+@media screen and (min-width:1200px) {
+    .cards-container{
+         grid-template-columns:repeat(auto-fit,minmax(600px,1fr)) ;
+     }
+     .cards-container>div{
+         width: clamp(550px, 90%, 750px);
+         height: 300px;
+     }
+     .cards-container>div>:not(img){
+         grid-column: 2/3;
+         grid-row: 1/2;
+     }
+ }
+ @media screen and (min-width:1800px) {
+    .cards-container{
+         grid-template-columns:repeat(auto-fit,minmax(300px,1fr)) ;
+     }
+     .cards-container >div{
+         width: clamp(280px,90%,450px);
+         grid-template-rows: 300px minmax(300px, 1fr);
+         height: 650px;
+ 
+         position: relative;
+     }
+     .cards-container >div>:not(img){
+         grid-row: 2/3;
+         grid-column: 1/2;
+     }
+ } 
+
+ @media screen and (min-width:2400px) {
+    .cards-container{
+         grid-template-columns:repeat(auto-fit,minmax(600px,1fr)) ;
+     }
+     .cards-container>div{
+         width: clamp(550px, 90%, 750px);
+         height: 300px;
+     }
+     .cards-container>div>:not(img){
+         grid-column: 2/3;
+         grid-row: 1/2;
+     }
+ }

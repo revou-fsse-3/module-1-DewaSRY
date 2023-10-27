@@ -18,6 +18,16 @@ class MySchedule{
 
     static run() {
         const cardsObj = SaveCards.getCardsObject();
+        console.log(Object.values(cardsObj).length)
+        if (Object.values(cardsObj).length) {
+            this.renderCard(cardsObj)
+        } else {
+            this.renderUsageCards()
+        }
+ 
+
+    }
+    static renderCard(cardsObj) {
         const cardsId = Object.keys(cardsObj);
         cardsId.forEach((id) => {
             const {date,imgSrc,para ,title,cardId} = cardsObj[id];
@@ -27,6 +37,7 @@ class MySchedule{
             })
             ControlToDo.addControl(cardsEle, "Delete", "", () => {
                 SaveCards.deleteCard(id)
+                location.reload();
             });
             ControlToDo.addControl(cardsEle, "Edit", "", () => {
                 // SaveCards.deleteCard(id);
@@ -43,6 +54,15 @@ class MySchedule{
             cardsContainer.appendChild(cardsEle)
         })
     }
+    static renderUsageCards() {
+        cardsContainer.innerHTML = `
+            <div>
+                <img src="/public/usages/set-teh-destination.png" alt="" width="250" height="250">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium reprehenderit non alias consequatur ipsam magni quidem consequuntur praesentium iure nesciunt, numquam rem et incidunt. Sapiente delectus repudiandae id aliquid error?</p>
+            </div>
+        `
+
+    }
 }
 
 MySchedule.run()
@@ -57,3 +77,12 @@ FormModalEle.getTodoForm.addEventListener('submit', () => {
     ModalEl.closeModal();
     location.reload();
 })
+
+document.body.addEventListener("click", (e) => {
+    if (!e.target.contains(FormModalEle.getTodoForm)) {
+        // console.log("inside")
+    } else {
+        // console.log("outside")
+        ModalEl.closeModal();
+    }
+},true)

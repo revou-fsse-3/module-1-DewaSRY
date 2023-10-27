@@ -23,4 +23,11 @@ FormModalEle.getTodoForm.addEventListener('submit', () => {
 })
 
 
-
+document.body.addEventListener("click", (e) => {
+    if (!e.target.contains(FormModalEle.getTodoForm)) {
+        // console.log("inside")
+    } else {
+        // console.log("outside")
+        ModalEl.closeModal();
+    }
+},true)

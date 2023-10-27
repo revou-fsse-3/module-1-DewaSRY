@@ -31,10 +31,9 @@ class CardStorage{
         }
     }
     getCardsObject() {
-        return this.cardsObject;
+         return this.cardsObject;
     }
     deleteCard(id) {
-        alert('get run')
         delete this.cardsObject[id];
         LocalStorage.setLocalStorage(this.cardsObject);
     }
